@@ -1,7 +1,7 @@
 var hr, mn, sc;
 
 function setup() {
-  createCanvas(400,400);
+  createCanvas(1536,745);
 }
 
 function draw() {
@@ -19,14 +19,14 @@ function draw() {
   noFill();
   strokeWeight(10);
   stroke("red");
-  arc(200,200,380,380,990,secondangle);
+  arc(800,400,380,380,990,secondangle);
   stroke(80,250,30);
-  arc(200,200,355,355,990,minuteangle);
+  arc(800,400,355,355,990,minuteangle);
   stroke("blue");
-  arc(200,200,330,330,990,hourangle);
+  arc(800,400,330,330,990,hourangle);
   
   push();
-  translate(200,200);
+  translate(800,400);
   rotate(secondangle);
   stroke("red");
   strokeWeight(10);
@@ -34,7 +34,7 @@ function draw() {
   pop();
 
   push();
-  translate(200,200);
+  translate(800,400);
   rotate(minuteangle);
   stroke(80,250,30);
   strokeWeight(10);
@@ -42,7 +42,7 @@ function draw() {
   pop();
 
   push();
-  translate(200,200);
+  translate(800,400);
   rotate(hourangle);
   stroke("blue");
   strokeWeight(10);
